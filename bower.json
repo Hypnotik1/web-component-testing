@@ -1,0 +1,28 @@
+{
+  "name": "dev",
+  "main": "index.html",
+  "description": "Dev",
+  "authors": [
+    "Ryan Scott <Ryan.C.Scott@Leidos.com"
+  ],
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "./",
+    "test",
+    "./favicon.ico",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0",
+    "iron-elements": "polymerelements/iron-elements#^1.0.0",
+    "paper-elements": "polymerelements/paper-elements#^1.0.0"
+  },
+  "devDependencies": {
+    "web-component-tester": "Polymer/web-component-tester"
+  }
+}
