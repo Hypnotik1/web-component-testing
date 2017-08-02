@@ -1,3 +1,6 @@
 {
-  "verbose": true
+  "verbose": false,
+  "suites": [
+    "src**/**/test/index.html"
+  ]
 }

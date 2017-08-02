@@ -8,13 +8,13 @@
 
     <link rel="import" href="../../../bower_components/test-fixture/test-fixture.html">
 
-    <link rel="import" href="../test-element.html">
+    <link rel="import" href="../test-element-2.html">
 </head>
 <body>
 
 <test-fixture id="testFixture">
     <template>
-        <test-element></test-element>
+        <test-element-2></test-element-2>
     </template>
 </test-fixture>
 
@@ -27,11 +27,11 @@
         });
 
         test("test-test", () => {
-            assert.equal("1", "1");
+            assert.equal("2", "2");
         });
 
         test("testElement.name should equal 'test-element'", () => {
-            assert.equal(testElement.name, "test-element");
+            assert.equal(testElement.name, "test-element-2");
         });
     });
 </script>

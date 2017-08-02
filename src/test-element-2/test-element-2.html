@@ -1,0 +1,36 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<!-- Polymer Elements -->
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+
+<dom-module id="test-element-2">
+    <template>
+        <style></style>
+        <paper-button id="testBtn">Click Me</paper-button>
+    </template>
+    <script>
+        Polymer({
+            is: "test-element-2",
+
+            properties: {
+                name: {
+                    type: String,
+                    value: "test-element-2"
+                }
+            },
+
+            _handleTestBtnTap: function () {
+                this.name = "event-fired-2";
+                this.fire("test-event-2");
+            },
+
+            attached() {
+                this.listen(this.$.testBtn, "tap", "_handleTestBtnTap");
+            },
+
+            detached() {
+                this.unlisten(this.$.testBtn, "tap", "_handleTestBtnTap");
+            }
+        });
+    </script>
+</dom-module>
